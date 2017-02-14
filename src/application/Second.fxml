@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXController">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <left>
+            <ImageView fx:id="originalFrame" fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <ImageView fx:id="frame" fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </center>
+   <bottom>
+      <Button fx:id="startCam" mnemonicParsing="false" onAction="#startCapture" text="Start Cam" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <VBox prefHeight="300.0" prefWidth="162.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="labelHMin" text="H-min:" />
+            <Slider fx:id="hMin" max="500.0" value="145.0" />
+            <Label fx:id="labelHMax" text="H-max:" />
+            <Slider fx:id="hMax" max="500.0" value="317.0" />
+            <Label fx:id="labelSMin" text="S-min:" />
+            <Slider fx:id="sMin" max="500.0" value="70.0" />
+            <Label fx:id="labelSMax" text="S-max:" />
+            <Slider fx:id="sMax" max="500.0" value="148.0" />
+            <Label fx:id="labelVMin" text="V-min:" />
+            <Slider fx:id="vMin" max="500.0" value="141.0" />
+            <Label fx:id="labelVMax" text="V-max:" />
+            <Slider fx:id="vMax" max="500.0" value="334.0" />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
